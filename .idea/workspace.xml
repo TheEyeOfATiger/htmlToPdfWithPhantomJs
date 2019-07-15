@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac4e3535-e68e-4fc4-be4f-1a4d0a0d3782" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/LeumasPdf.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/LeumasPdf.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LeumasPdf.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/PdfGenerator/Phantom.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,20 +23,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LeumasPdf.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/LeumasPdf.php">
+      <file leaf-file-name="Phantom.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/PdfGenerator/Phantom.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="composer.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/composer.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="29" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="29" />
+            <state relative-caret-position="204">
+              <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+              <folding>
+                <element signature="e#6#90#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -49,9 +44,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/LeumasPdf.php" />
-        <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/src/generate-pdf.js" />
         <option value="$PROJECT_DIR$/src/LeumasPdf.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/src/PdfGenerator/LeumasPdf.php" />
       </list>
     </option>
   </component>
@@ -64,7 +60,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
@@ -88,6 +84,12 @@
               <item name="htmlToPdfWithPhantomJs" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
+            <path>
+              <item name="htmlToPdfWithPhantomJs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="htmlToPdfWithPhantomJs" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="PdfGenerator" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -102,6 +104,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\leumas\PhpstormProjects\htmlToPdfWithPhantomJs\src\PdfGenerator" />
       <recent name="C:\Users\leumas\PhpstormProjects\htmlToPdfWithPhantomJs\src" />
     </key>
   </component>
@@ -132,7 +135,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2823000" />
+    <option name="totallyTimeSpent" value="3587000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
@@ -168,10 +171,13 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/LeumasPdf.php">
+    <entry file="file://$PROJECT_DIR$/src/PdfGenerator/Phantom.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="535">
           <caret line="236" column="5" selection-start-line="236" selection-start-column="5" selection-end-line="236" selection-end-column="5" />
+          <folding>
+            <element signature="e#6#90#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -191,15 +197,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="29" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="29" />
+        <state relative-caret-position="170">
+          <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/LeumasPdf.php">
+    <entry file="file://$PROJECT_DIR$/src/PdfGenerator/Phantom.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
+        <state relative-caret-position="204">
+          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+          <folding>
+            <element signature="e#6#90#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

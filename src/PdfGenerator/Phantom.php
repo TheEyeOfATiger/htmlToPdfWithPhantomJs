@@ -9,7 +9,7 @@
 namespace PdfGenerator;
 
 
-class LeumasPdf
+class Phantom
 {
     protected $baseUrl;
     protected $binaryPath;
