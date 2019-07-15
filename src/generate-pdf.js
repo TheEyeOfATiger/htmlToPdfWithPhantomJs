@@ -3,26 +3,22 @@ var fs = require('fs'),
     page = require('webpage').create();
 // page.settings.userAgent = 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.120 Safari/537.36';
 page.settings.userAgent = 'Chrome/37.0.2062.120';
-// page.settings.loadImages = true;
-// page.settings.localToRemoteUrlAccessEnabled  = true;
 page.customHeaders = {
     "Connection": "keep-alive"
 };
-// page.addCookie({
-//     'name':     'Valid-Cookie-Name',   /* required property */
-//     'value':    'Valid-Cookie-Value',  /* required property */
-//     'domain':   'localhost',           /* required property */
-//     'path':     '/foo',
-//     'httponly': true,
-//     'secure':   false,
-//     'expires':  (new Date()).getTime() + (1000 * 60 * 60)   /* <-- expires in 1 hour */
-// });
 
 page.open(args[1], function (status)
 {
+    var orientation = 'landscape';
+
+    if(args[3])
+    {
+        orientation = args[3];
+    }
+
     page.paperSize = {
         format: "A4",
-        orientation: "orientation",
+        orientation: orientation,
         margin: {
             left:"0.35cm",
             right:"0.35cm",
