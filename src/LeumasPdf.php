@@ -23,6 +23,27 @@ class LeumasPdf
         '--ignore-ssl-errors=true',
         '--web-security=false'
     ];
+    protected $pdfOrientation = 'landscape';
+
+    /**
+     * @return string
+     */
+    public function getPdfOrientation()
+    {
+        return $this->pdfOrientation;
+    }
+
+    /**
+     * @param string $pdfOrientation
+     * @return LeumasPdf
+     */
+    public function setPdfOrientation($pdfOrientation)
+    {
+        $this->pdfOrientation = $pdfOrientation;
+        return $this;
+    }
+
+
 
 
     /**
@@ -43,17 +64,37 @@ class LeumasPdf
             ->deleteFileAfterSend(true);
     }
 
+    public function addTemplateToView($view)
+    {
+        $style_css_personal = "<style media='all'> 
+html {zoom:0.76; margin: 0 1cm; font-size: 10.5pt;}
+table { page-break-inside: avoid;  float:none;}
+tr , td{  float:none; page-break-inside: avoid; page-break-after: auto;}
+
+</style>";
+        $prepared_html = "<!DOCTYPE html><html><head><title>PDF GENERATOR</title><meta charset=\"UTF-8\"></head>"
+            ."<body>".$style_css_personal.$view."</body></html>";
+
+        return $tempView;
+    }
+
     /**
      * Save a PDF file to the disk
      * @param string|object $view
      * @param string $path
      */
-    public function saveFromView($view, $path)
+    public function saveFromView($view, $path, $addTemplateToView = true)
     {
+        if($addTemplateToView)
+        {
+            $view = $this->addTemplateToView($view);
+        }
+
         $this->generateFilePaths();
         $this->generatePdf($view);
 
         rename($this->pdfPath, $path);
+        return $path;
     }
 
     /**
@@ -99,7 +140,8 @@ class LeumasPdf
             implode(' ', $this->commandLineOptions),
             $this->convertScript,
             $this->prefixHtmlPath($this->htmlPath),
-            $this->pdfPath
+            $this->pdfPath,
+            $this->getPdfOrientation()
         ]);
 
         $process = new Process($command, __DIR__);

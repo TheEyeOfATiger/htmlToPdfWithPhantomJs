@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac4e3535-e68e-4fc4-be4f-1a4d0a0d3782" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/generate-pdf.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/generate-pdf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LeumasPdf.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/LeumasPdf.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,7 +13,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="generate-pdf.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="generate-pdf.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/generate-pdf.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
@@ -22,15 +22,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LeumasPdf.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="LeumasPdf.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/LeumasPdf.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="535">
-              <caret line="236" column="5" selection-start-line="236" selection-start-column="5" selection-end-line="236" selection-end-column="5" />
-              <folding>
-                <element signature="e#6#90#0#PHP" expanded="true" />
-                <element signature="e#683#1062#0#PHP" />
-              </folding>
+            <state>
+              <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -54,8 +50,8 @@
       <list>
         <option value="$PROJECT_DIR$/LeumasPdf.php" />
         <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/src/LeumasPdf.php" />
         <option value="$PROJECT_DIR$/src/generate-pdf.js" />
+        <option value="$PROJECT_DIR$/src/LeumasPdf.php" />
       </list>
     </option>
   </component>
@@ -136,7 +132,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2773000" />
+    <option name="totallyTimeSpent" value="2823000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
@@ -176,10 +172,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="535">
           <caret line="236" column="5" selection-start-line="236" selection-start-column="5" selection-end-line="236" selection-end-column="5" />
-          <folding>
-            <element signature="e#6#90#0#PHP" expanded="true" />
-            <element signature="e#683#1062#0#PHP" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -206,12 +198,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LeumasPdf.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="535">
-          <caret line="236" column="5" selection-start-line="236" selection-start-column="5" selection-end-line="236" selection-end-column="5" />
-          <folding>
-            <element signature="e#6#90#0#PHP" expanded="true" />
-            <element signature="e#683#1062#0#PHP" />
-          </folding>
+        <state>
+          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
         </state>
       </provider>
     </entry>
