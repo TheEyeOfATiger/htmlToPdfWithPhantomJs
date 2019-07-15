@@ -7,7 +7,10 @@
  */
 
 namespace PdfGenerator;
-
+use Exception;
+use Symfony\Component\HttpFoundation\BinaryFileResponse;
+use Symfony\Component\Process\Exception\RuntimeException;
+use Symfony\Component\Process\Process;
 
 class Phantom
 {
@@ -17,7 +20,7 @@ class Phantom
     protected $htmlPath;
     protected $pdfPath;
     protected $timeout = 10;
-    protected $convertScript = 'generate-pdf.js';
+    protected $convertScript = '../generate-pdf.js';
     protected $commandLineOptions = [
         '--ssl-protocol=any',
         '--ignore-ssl-errors=true',
@@ -53,9 +56,13 @@ class Phantom
      * @param bool $inline
      * @return BinaryFileResponse
      */
-    public function createFromView($view, $filename, $inline = false)
+    public function createFromView($view, $filename, $inline = false, $addTemplateToView = true)
     {
         $this->generateFilePaths();
+        if($addTemplateToView)
+        {
+            $view = $this->addTemplateToView($view);
+        };
         $this->generatePdf($view);
 
         $contentDisposition = $inline ? 'inline' : 'attachment';
@@ -72,10 +79,8 @@ table { page-break-inside: avoid;  float:none;}
 tr , td{  float:none; page-break-inside: avoid; page-break-after: auto;}
 
 </style>";
-        $prepared_html = "<!DOCTYPE html><html><head><title>PDF GENERATOR</title><meta charset=\"UTF-8\"></head>"
+        return "<!DOCTYPE html><html><head><title>PDF GENERATOR</title><meta charset=\"UTF-8\"></head>"
             ."<body>".$style_css_personal.$view."</body></html>";
-
-        return $tempView;
     }
 
     /**
