@@ -1,0 +1,23 @@
+{
+    "name": "leumas/html-to-pdf-with-phantom-js",
+    "description": "A package suitable for html to pdf generation. It uses phantomjs api. More reliable and faster then mpdf or fpdf.",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Lazar Samuel",
+            "email": "lazar.samuel@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.4.0",
+        "symfony/http-foundation": ">=2.6",
+        "symfony/process": ">=2.6"
+    },
+    "autload":{
+        "psr-0": {
+            "PdfGenerator": "src/"
+        }
+    }
+}
