@@ -1,6 +1,6 @@
 {
     "name": "leumas/html-to-pdf-with-phantom-js",
-    "description": "A package suitable for html to pdf generation. It uses phantomjs api. More reliable and faster then mpdf or fpdf.",
+    "description": "A package suitable for html to pdf generation. It contains a wrapper written in PHP for phantom api and a script written in javascript that will trigger phantom to convert html to pdf.It is more reliable and faster than mpdf or fpdf.",
     "type": "project",
     "license": "MIT",
     "authors": [
